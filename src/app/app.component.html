@@ -1,0 +1,8 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+  
+</ion-app>
+
+<ng-lottie
+ *ngIf="splashAnim"
+ [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
