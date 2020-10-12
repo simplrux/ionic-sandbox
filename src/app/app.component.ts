@@ -14,7 +14,7 @@ import { AnimationItem } from 'lottie-web';
 export class AppComponent {
 
   options: AnimationOptions = {
-    path: '../../assets/loader1.json',
+    path: '../../assets/loader.json',
     loop: true
   };
 
@@ -36,11 +36,10 @@ export class AppComponent {
   }
 
   animationCreated(animationItem: AnimationItem): void {
-    // console.log(animationItem);
     animationItem.setSpeed(1.5);
     setTimeout(() => {
-      // animationItem.stop();
+      animationItem.stop();
       this.splashAnim = false;
-    }, 4000);
+    }, 6000);
   }
 }
